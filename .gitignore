@@ -1,0 +1,43 @@
+
+# Dependencies
+**/node_modules/
+
+# Vite cache
+**/.vite/
+
+# Environment variables and secrets
+**/.env
+**/.env.*
+**/.env.txt
+!.env.example
+!**/.env.example
+
+# Firebase credentials
+**/ServiceKey.json
+**/serviceAccountKey.json
+
+# Build files
+**/dist/
+**/build/
+**/out/
+
+# Logs
+**/logs/
+*.log
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE files
+.vscode/
+.idea/
+.DS_Store
+
+# Temporary files
+.npm/
+*.tgz
+.eslintcache
+.node_repl_history
+# Vite cache
+client/.vite/
+**/.vite/

@@ -1,81 +1,119 @@
-# AI-Powered Interview Platform
+# PrepAI – AI-Powered Interview Preparation Platform
 
-An **AI-driven mock interview platform** leveraging **Azure AI** (Speech-to-Text) and **Gemini AI** (for intelligent question generation). Built with **MERN stack** and deployed using **AWS Serverless** for a **scalable and cost-efficient** backend.
+PrepAI is a full-stack AI-powered interview preparation platform designed to help students improve their technical interview skills. It provides an interactive environment for interview practice, AI-assisted question generation, and interview preparation.
 
-## 🚀 Features
-- **AI-Powered Question Generation** – Uses **Gemini AI** to generate dynamic, role-specific interview questions.
-- **Real-time Transcription** – Converts speech to text via **Azure AI Speech Services** for seamless interview documentation.
-- **Scalable & Serverless** – Deployed with **AWS Lambda and API Gateway** for optimal performance.
-- **Interactive Code Editor** – Supports live coding assessments
+## Key Features
 
----
+- **AI-Powered Interview Preparation** – Uses Google Gemini API to support intelligent interview-related functionality.
+- **Mock Interview Practice** – Provides an interactive platform for practicing interview questions.
+- **User Authentication** – Implements secure authentication using JSON Web Tokens (JWT).
+- **Backend REST APIs** – Handles application requests and communication between the frontend and backend.
+- **Database Integration** – Uses MongoDB to store application and user data.
+- **Responsive User Interface** – Built with React and Tailwind CSS for a user-friendly experience.
 
-## 🛠️ Tech Stack
-### **Frontend (Client)**
-- **React.js + Vite** – Fast and optimized UI
-- **Tailwind CSS** – Modern, responsive styling
-- **Lucide React** – Icon library for enhanced UI
+## Tech Stack
 
-### **Backend (Server)**
-- **Node.js & Express.js** – Efficient REST API backend
-- **MongoDB (Atlas)** – Cloud database for structured interview data
-- **AWS Serverless** – Lambda, API Gateway, and S3 for scalable deployment
-- **Socket.io** – Real-time communication for interview sessions
-- **Azure AI Speech-to-Text** – Converts spoken words to text in real time
-- **Gemini AI** – Generates interview questions dynamically
+### Frontend
+- React.js
+- Vite
+- TypeScript
+- Tailwind CSS
+- Lucide React
 
----
+### Backend
+- Node.js
+- Express.js
+- TypeScript
+- REST APIs
+- JWT Authentication
 
-## 📂 Folder Structure
-```
-📦 AI-Interview-Platform
-├── 📁 client   # Frontend (React + Vite)
-├── 📁 server   # Backend (Node.js + Express)
+### Database & AI
+- MongoDB Atlas
+- Mongoose
+- Google Gemini API
+
+## Project Structure
+
+```text
+PrepAI/
+├── client/          # React frontend
+├── server/          # Node.js backend
+├── .gitignore
 └── README.md
 ```
 
----
+## Installation and Setup
 
-## 🔧 Setup Instructions
+### 1. Clone the Repository
 
-### 1️⃣ Clone the Repository
-```sh
-git clone hhttps://github.com/Cleveridiot07/MockMate.git
-cd= mockmate
+```bash
+git clone https://github.com/arvindanand299-cyber/PrepAI.git
+cd PrepAI
 ```
 
-### 2️⃣ Setup **Client** (Frontend)
-```sh
-cd client
-npm install
-npm run dev  # Starts frontend on http://localhost:5173
-```
+### 2. Setup the Backend
 
-### 3️⃣ Setup **Server** (Backend)
-```sh
+```bash
 cd server
 npm install
-npm run dev  # Starts backend on http://localhost:8000
 ```
 
----
+Configure your environment variables in a `.env` file using the required variable names from the project's environment configuration.
 
-## 🚀 Deployment
-### **Frontend**: Deployed on **Netlify**
-```sh
-npm run build  # Generates optimized build files
+Then start the backend:
+
+```bash
+npm run dev
 ```
 
-### **Backend**: Deployed on **AWS Lambda** via **Serverless Framework**
-```sh
-serverless deploy
+The backend runs on:
+
+```text
+http://localhost:8000
 ```
 
----
+### 3. Setup the Frontend
 
+Open a new terminal:
 
+```bash
+cd client
+npm install
+npm run dev
+```
 
-## 👥 Contributors
-- **Nikhil Saxena** – [GitHub](https://github.com/Cleveridiot07)
+The frontend is available at:
 
-Pull requests are welcome! 🚀
+```text
+http://localhost:5173
+```
+
+## Environment Configuration
+
+Configure the required environment variables for:
+
+- MongoDB connection
+- JWT authentication
+- Google Gemini API
+- Any additional services used by the application
+
+**Important:** Never upload your `.env` file, API keys, database passwords, or private credentials to GitHub.
+
+## Future Enhancements
+
+- Resume-based interview preparation
+- Company-specific interview questions
+- Detailed interview performance analytics
+- Additional programming and technical interview practice
+- Deployment and production optimization
+
+## Author
+
+**Arvind Anand**
+
+- GitHub: [arvindanand299-cyber](https://github.com/arvindanand299-cyber)
+- Project Repository: [PrepAI](https://github.com/arvindanand299-cyber/PrepAI)
+
+## License
+
+Add or retain the applicable license and attribution for any third-party or adapted source code used in this project.
